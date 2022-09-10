@@ -1,3 +1,7 @@
+:root {
+  --primary-color: #ff6060;
+  --background-color: #f6f6f6;
+}
 body {
   max-width: 1440px;
   margin: auto;

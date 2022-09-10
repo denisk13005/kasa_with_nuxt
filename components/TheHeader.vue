@@ -23,7 +23,6 @@ export default {}
   align-items: center;
 }
 .left {
-  border: 1px solid blue;
   width: 210px;
   height: 68px;
 }
@@ -31,12 +30,12 @@ export default {}
   width: 100%;
 }
 .right nav a {
-  color: #ff6060;
   margin-left: 58px;
   font-size: 24px;
+  color: var(--primary-color);
 }
 .right nav a:visited {
-  color: #ff6060;
+  color: var(--primary-color);
 }
 .right nav a:hover {
   text-decoration: none;
