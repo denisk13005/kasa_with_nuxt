@@ -54,11 +54,6 @@ img {
   width: 80%;
 }
 @media screen and (max-width: 768px) {
-  .bannerContainer {
-    height: 111px;
-    margin-top: 20px;
-    border-radius: 10px;
-  }
   .bannerContainer img {
     object-fit: cover;
     object-position: right;

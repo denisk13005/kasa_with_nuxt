@@ -50,5 +50,10 @@ export default {
     background-color: transparent;
     padding: 0;
   }
+  .bannerContainer {
+    height: 111px;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
 }
 </style>
