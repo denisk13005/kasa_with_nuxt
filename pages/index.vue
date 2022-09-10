@@ -42,6 +42,8 @@ export default {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 50px;
+  padding-bottom: 0px;
+  margin-bottom: 50px;
 }
 @media screen and (max-width: 768px) {
   .thumbnailsContainer {

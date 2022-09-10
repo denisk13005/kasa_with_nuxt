@@ -7,4 +7,5 @@ body {
   margin: auto;
   border: 1px solid red;
   padding: 10px 20px;
+  padding-bottom: 0px;
 }

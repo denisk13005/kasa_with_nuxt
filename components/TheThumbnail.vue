@@ -26,7 +26,6 @@ export default {
 .thumbnailContainer {
   width: 31%;
   height: 340px;
-  background-color: aquamarine;
   position: relative;
   margin-bottom: 50px;
   border-radius: 10px;
@@ -56,10 +55,12 @@ export default {
   position: absolute;
   bottom: 0px;
   left: 20px;
-  color: white;
+  color: var(--white);
   width: 70%;
   z-index: 12;
+  font-size: 18px;
 }
+
 @media screen and (max-width: 1000px) {
   .thumbnailContainer {
     width: 45%;
