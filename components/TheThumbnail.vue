@@ -1,10 +1,8 @@
 <template>
-  <!-- <NuxtLink > -->
   <div class="thumbnailContainer">
     <img class="thumbnailImg" :src="cover" alt="" />
     <p class="thumbnailP">{{ title }}</p>
   </div>
-  <!-- </NuxtLink> -->
 </template>
 
 <script>
@@ -24,10 +22,9 @@ export default {
 
 <style scoped>
 .thumbnailContainer {
-  width: 31%;
-  height: 340px;
+  width: 100%;
+  height: 100%;
   position: relative;
-  margin-bottom: 50px;
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
@@ -59,17 +56,5 @@ export default {
   width: 70%;
   z-index: 12;
   font-size: 18px;
-}
-
-@media screen and (max-width: 1000px) {
-  .thumbnailContainer {
-    width: 45%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .thumbnailContainer {
-    width: 100%;
-    height: 255px;
-  }
 }
 </style>
