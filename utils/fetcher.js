@@ -1,6 +1,7 @@
-export const fetchDatas = async () => {
-  const datas = await fetch('../assets/datas/datas.json')
-    .then((res) => res.json)
-    .then((data) => data)
-  return datas
+import { accommodations } from 'assets/datas/datas.json'
+
+export const getAccommodation = (id) => {
+  const accommodation = accommodations.filter((x) => x.id === id)
+  // console.log(accommodation)
+  return accommodation
 }
