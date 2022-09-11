@@ -2,12 +2,9 @@
   "name": "kasa_with_nuxt",
   "version": "1.0.0",
   "private": true,
-  "directories": {
-    "output": "dist"
-  },
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build",
+    "build": "npm run generate",
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
