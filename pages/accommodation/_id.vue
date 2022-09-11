@@ -25,8 +25,20 @@
           <img :src="accommodation.host.picture" alt="" />
         </div>
         <div class="starsContainer">
-          <span> </span>
-          <span></span>
+          <img
+            v-for="(star, index) of parseInt(accommodation.rating)"
+            :key="index"
+            class="pinkStars"
+            src="@/assets/images/pinkStar.svg"
+            alt=""
+          />
+          <img
+            v-for="(star, index) of parseInt(5 - accommodation.rating)"
+            :key="index"
+            class="greyStars"
+            src="@/assets/images/greyStar.svg"
+            alt=""
+          />
         </div>
       </div>
     </div>
@@ -121,7 +133,7 @@ export default {
   margin-left: 10px;
 }
 .starsContainer {
-  border: 1px solid green;
+  display: flex;
 }
 .descAndEquipments {
   display: flex;
