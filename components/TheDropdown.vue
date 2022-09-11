@@ -54,6 +54,8 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 .headerDropdown .arrow {
   font-size: 18px;
@@ -68,14 +70,18 @@ export default {
   transform: rotate(180deg);
 }
 .containDropdown {
-  max-height: 0;
+  display: none;
   padding: 0px;
   transition: all 0.1s linear;
   transform-origin: center;
   background-color: var(--dropdown_background);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  position: relative;
+  top: -10px;
 }
 .visible {
-  max-height: 40vh;
+  display: block;
 
   padding: 20px;
 }

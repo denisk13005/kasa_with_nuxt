@@ -1,5 +1,5 @@
 <template>
-  <div v-if="accommodation.pictures">
+  <div v-if="accommodation.pictures" class="accPage">
     <div class="galleryContainer">
       <img :src="accommodation.pictures[0]" alt="" />
     </div>
@@ -29,8 +29,17 @@
         </div>
       </div>
     </div>
-    <div class="desc&Equipments">
-      <TheDropdown title="Equipements" :equipments="accommodation.equipments" />
+    <div class="descAndEquipments">
+      <TheDropdown
+        class="dropdownAccPage"
+        title="Equipements"
+        :equipments="accommodation.equipments"
+      />
+      <TheDropdown
+        class="dropdownAccPage"
+        title="Description"
+        :description="accommodation.description"
+      />
     </div>
   </div>
   <div v-else>Loading ...</div>
@@ -56,15 +65,13 @@ export default {
 </script>
 
 <style scoped>
+.accPage {
+  margin-bottom: 50px;
+}
 .galleryContainer {
   width: 100%;
   height: 415px;
   margin-top: 30px;
-  background: radial-gradient(
-    circle,
-    rgb(80, 217, 241) 10%,
-    rgb(189, 218, 189) 60%
-  );
 }
 .galleryContainer img {
   object-fit: cover;
@@ -115,5 +122,13 @@ export default {
 }
 .starsContainer {
   border: 1px solid green;
+}
+.descAndEquipments {
+  display: flex;
+  justify-content: space-between;
+}
+.dropdownAccPage {
+  margin-top: 24px;
+  width: 48%;
 }
 </style>
