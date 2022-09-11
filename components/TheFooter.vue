@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer id="footer">
     <img src="../assets/images/D_Footer.svg" alt="" />
   </footer>
 </template>

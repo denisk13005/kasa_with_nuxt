@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="aboutPage">
     <TheBanner img="background_about" />
     <TheDropdown
       v-for="about in abouts"
@@ -25,13 +25,20 @@ export default {
 
 <style scoped>
 .dropdown {
-  border: var(--border);
   width: 85%;
   margin: auto;
+  margin-top: 31px;
 }
+.aboutPage {
+  margin-bottom: 140px;
+}
+
 @media screen and (max-width: 768px) {
   .dropdown {
     width: 100%;
+  }
+  .aboutPage {
+    margin-bottom: 140px;
   }
 }
 </style>

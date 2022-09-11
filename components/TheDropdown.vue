@@ -56,8 +56,7 @@ export default {
   align-items: center;
 }
 .headerDropdown .arrow {
-  height: 20px;
-  width: 20px;
+  font-size: 18px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -70,10 +69,14 @@ export default {
 }
 .containDropdown {
   max-height: 0;
-  transition: max-height 0.15s linear;
+  padding: 0px;
+  transition: all 0.1s linear;
+  transform-origin: center;
+  background-color: var(--dropdown_background);
 }
 .visible {
-  max-height: 10vh;
-  transition: max-height 0.15s linear;
+  max-height: 40vh;
+
+  padding: 20px;
 }
 </style>
