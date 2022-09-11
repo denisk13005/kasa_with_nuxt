@@ -11,7 +11,7 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/logo.svg' }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -37,5 +37,5 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
-  ssr: false, // désactive le ssr
+  // ssr: false, // désactive le ssr
 }
