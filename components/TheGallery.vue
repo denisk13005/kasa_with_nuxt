@@ -36,9 +36,10 @@ export default {
 .galleryContainer {
   width: 100%;
   height: 340px;
-  background-color: aqua;
   position: relative;
   margin-bottom: 24px;
+  border-radius: 30px;
+  overflow: hidden;
 }
 .arrow {
   width: 50px;
@@ -46,22 +47,34 @@ export default {
   position: absolute;
   cursor: pointer;
   transform: translateY(-75%) rotate(45deg);
+  z-index: 11;
 }
 .leftArrow {
   top: 50%;
   left: 20px;
-  border-bottom: 2px solid white;
-  border-left: 2px solid white;
+  border-bottom: 4px solid white;
+  border-left: 4px solid white;
 }
 .rightArrow {
   top: 50%;
   right: 20px;
-  border-top: 2px solid white;
-  border-right: 2px solid white;
+  border-top: 4px solid white;
+  border-right: 4px solid white;
 }
 .imgContainer {
   width: 100%;
   height: 100%;
+  position: relative;
+}
+.imgContainer::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.15);
+  z-index: 10;
 }
 .imgContainer img {
   object-fit: cover;
