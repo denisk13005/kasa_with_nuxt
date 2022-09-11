@@ -1,8 +1,9 @@
 <template>
-  <div v-if="accommodation.pictures" class="accPage">
-    <div class="galleryContainer">
+  <div v-if="accommodation.host" class="accPage">
+    <!-- <div class="galleryContainer">
       <img :src="accommodation.pictures[0]" alt="" />
-    </div>
+    </div> -->
+    <TheGallery :images="accommodation.pictures" />
     <div class="titleEtc">
       <div class="titleLocTags">
         <h1 class="accommodationTitle">{{ accommodation.title }}</h1>
@@ -101,7 +102,6 @@ export default {
   text-align: center;
 }
 .nameAndStars {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: flex-end;

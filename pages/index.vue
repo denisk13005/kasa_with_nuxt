@@ -24,10 +24,8 @@
 <script>
 // import { fetchDatas } from '~/utils/fetcher'
 import { accommodations } from '../assets/datas/datas.json'
-import TheThumbnail from '~/components/TheThumbnail.vue'
 export default {
   name: 'IndexPage',
-  components: { TheThumbnail },
   layout: 'default_layout',
   data() {
     return {
