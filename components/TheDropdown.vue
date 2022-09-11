@@ -4,7 +4,7 @@
       <p>{{ title }}</p>
       <span class="arrow" @click="toggleOpen">^</span>
     </div>
-    <div class="containDropdown visible">
+    <div class="containDropdown">
       <p v-if="description">{{ description }}</p>
       <ul v-else>
         <li v-for="equipment in equipments" :key="equipment">
@@ -36,12 +36,16 @@ export default {
   methods: {
     toggleOpen(e) {
       e.target.classList.toggle('open')
+      e.target.parentElement.nextElementSibling.classList.toggle('visible')
     },
   },
 }
 </script>
 
 <style scoped>
+.dropdownContainer {
+  overflow: hidden;
+}
 .headerDropdown {
   background-color: var(--primary-color);
   color: white;
@@ -65,12 +69,11 @@ export default {
   transform: rotate(180deg);
 }
 .containDropdown {
-  display: none;
-  transform: scale(0);
-  transition: transform 0.15s linear;
+  max-height: 0;
+  transition: max-height 0.15s linear;
 }
 .visible {
-  display: block;
-  transform: scale(1);
+  max-height: 10vh;
+  transition: max-height 0.15s linear;
 }
 </style>
