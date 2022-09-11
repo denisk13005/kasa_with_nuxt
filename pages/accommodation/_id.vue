@@ -29,7 +29,9 @@
         </div>
       </div>
     </div>
-    <div class="desc&Equipments"></div>
+    <div class="desc&Equipments">
+      <TheDropdown title="Equipements" :equipments="accommodation.equipments" />
+    </div>
   </div>
   <div v-else>Loading ...</div>
 </template>

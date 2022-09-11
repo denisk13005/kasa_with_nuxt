@@ -12,9 +12,10 @@ export default {
       type: String,
       required: true,
     },
+    // eslint-disable-next-line vue/require-default-prop
     title: {
       type: String,
-      required: true,
+      required: false,
     },
   },
 }

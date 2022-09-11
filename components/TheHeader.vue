@@ -5,8 +5,8 @@
     </div>
     <div class="right">
       <nav>
-        <NuxtLink to="/">Accueil</NuxtLink>
-        <NuxtLink to="/about_page">A propos</NuxtLink>
+        <nuxt-link to="/">Accueil</nuxt-link>
+        <nuxt-link to="/about_page">A propos</nuxt-link>
       </nav>
     </div>
   </header>
@@ -17,6 +17,10 @@ export default {}
 </script>
 
 <style scoped>
+.header-container .right .nuxt-link-exact-active {
+  border-bottom: 1px solid var(--primary-color);
+  padding-bottom: 2px;
+}
 .header-container {
   display: flex;
   justify-content: space-between;
